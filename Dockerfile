@@ -6,3 +6,4 @@ RUN yum install -y wget && wget --no-check-certificate --no-cookies --header "Co
 RUN rpm -ivh jdk-8u131-linux-x64.rpm && rm jdk-8u131-linux-x64.rpm
 RUN yum  clean all
 
+ENV JAVA_HOME /usr/java/default
